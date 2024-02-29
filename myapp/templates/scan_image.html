@@ -1,12 +1,29 @@
-<!-- image_scanner/templates/scan_image.html -->
-<html>
-<head><title>Upload Image</title></head>
+<!-- scan_image.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Image</title>
+    <!-- Link the CSS file -->
+    <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+</head>
 <body>
-    <h2>Upload Image</h2>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        
+        <h1 class="text-center mt-5">Scan Image</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+                <!-- Form for uploading image -->
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button class="btn whoop mt-3" type="submit">Scan Image</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

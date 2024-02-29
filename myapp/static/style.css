@@ -1,0 +1,94 @@
+/* style.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6fbf4;
+}
+
+/* Container styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #4b8673;
+    margin-bottom: 20px;
+}
+
+/* Subheader styles */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4b8673;
+    margin-bottom: 10px;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5fd068;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Result styles */
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.result h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b8673;
+    margin-bottom: 10px;
+}
+
+/* Remove the unnecessary color property from the ul */
+.result .caloriescont ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Adjust the color property for the li */
+.result  li {
+    margin-bottom: 10px;
+}
+
+/* Add color to the nutrient values */
+.result .caloriescont li span {
+    color: #030393; /* Change the color to match the design */
+}
+
+
+/* Error styles */
+.error {
+    color: #ff0000;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
